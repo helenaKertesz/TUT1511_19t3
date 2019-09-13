@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>COMP1511 19t2 wk01</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link href="album.css" rel="stylesheet">
+
+<!-- Syntax higlighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/hybrid.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>  
+
+</head>
+
+<body>
+
+<!--  -->
+<div class="navbar navbar-dark bg-dark box-shadow">
+<div class="container d-flex justify-content-between">
+<a href="#" class="navbar-brand d-flex align-items-center">
+<strong>19t2</strong>
+</a>
+</div>
+</div>
+
+<main role="main">
+
+<div class="jumbotron text-center">
+<div class="container">
+<h1 class="jumbotron-heading">Week 1</h1>
+			
+
+<div class="container text-left bg-light">
+<p>
+Every C program you run will have a <code>main()</code> function, which will look something like:
+<pre style="text-align: left; font-size: 15px"><code><div class="container">int main(void){
+    // more code here
+    return 0;
+}
+</div></code></pre>
+
+Everything inside the curly braces <code>{ }</code> is in the main function. To make it easier to read, every time we come across a pair of curly braces all the code inside is indented.
+</p><p>
+Another thing your code should always have is comment. Each file should have a comment up the top with who wrote it, the date and what the code in that file does. As your code becomes more complex you will also want to write comments as you go.
+</p>
+
+<div class="navbar navbar-dark bg-dark box-shadow" style="margin-bottom: 0px">
+<div class="container d-flex justify-content-between">
+<strong class="navbar-brand d-flex">hello.c</strong>
+<a href="hello.c" download>
+<strong class="navbar-brand d-flex">download</strong>
+</a>
+</div>
+</div>
+
+<pre style="text-align: left; font-size: 15px"><code><div class="container">
+// Author: Andrew Taylor (andrewt@unsw.edu.au)
+// Date created: January 2018
+// A very simple C program
+
+#include &ltstdio.h&gt
+
+int main(void) {
+    printf("I love COMP1511!\n");
+    
+    return 0;
+}
+</div></code></pre>
+
+<p>
+<code>printf()</code> stands for "print formatted", and is how we output text in C. Note here the special character <code>\n</code>, which is a newline. You can open the manual page for <code>printf</code> by writing <code>man printf</code> in your terminal to see other special characters in C. These are called escape sequences, and backslash <code>\</code> is the escape character.
+</p>
+
+</div>
+
+</div></div>
+</main>
+
+
+<footer class="text-muted"><div class="container">
+<p class="float-right"><a href="#">Back to top</a></p>
+</div></footer>
+
+</body>
+
+</html>
+
