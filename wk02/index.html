@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>COMP1511 19t3 wk02</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link href="album.css" rel="stylesheet">
+
+<!-- Syntax higlighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/hybrid.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>  
+
+</head>
+
+<body>
+
+<!--  -->
+<div class="navbar navbar-dark bg-dark box-shadow">
+<div class="container d-flex justify-content-between">
+<a href="#" class="navbar-brand d-flex align-items-center">
+<strong>19t3</strong>
+</a>
+</div>
+</div>
+
+<main role="main">
+
+<div class="jumbotron text-center">
+<div class="container">
+<h1 class="jumbotron-heading">Week 2</h1>
+			
+
+<div class="container text-left bg-light">
+
+<div class="navbar navbar-dark bg-dark box-shadow" style="margin-bottom: 0px">
+<div class="container d-flex justify-content-between">
+<strong class="navbar-brand d-flex">rectangle_area.c</strong>
+<a href="rectangle_area.c" download>
+<strong class="navbar-brand d-flex">download</strong>
+</a>
+</div>
+</div>
+
+<pre style="text-align: left; font-size: 15px"><code><div class="container">
+// COMP1511 Tut 02  Exercise - rectangle
+// Given the lengths of the two sides of a 
+// rectangle print out the area.
+//
+// Authors: tue11-brass & wed16-drum
+// Written: 24/09/2019
+//
+
+
+
+#include &ltstdio.h&gt
+
+int main() {
+
+	printf("Please enter rectangle length: ");
+
+    int length;
+	scanf("%d", &length);
+	printf("Please enter rectangle width: ");
+
+    int width;
+	scanf("%d", &width);
+
+    int area = width * length;
+    printf("Area = %d\n", area);
+	//printf("Area = %d\n", width * length); // this prints the same
+
+    return 0;
+}
+</div></code></pre>
+</div>
+
+<div class="container text-left bg-light">
+
+<div class="navbar navbar-dark bg-dark box-shadow" style="margin-bottom: 0px">
+<div class="container d-flex justify-content-between">
+<strong class="navbar-brand d-flex">leap_year.c</strong>
+<a href="leap_year.c" download>
+<strong class="navbar-brand d-flex">download</strong>
+</a>
+</div>
+</div>
+
+<pre style="text-align: left; font-size: 15px"><code><div class="container">
+// COMP1511 Tut 02  Exercise - leap year
+// Given a year, print out if it is or isn't a leap year
+// The logic used comes from:
+// https://en.wikipedia.org/wiki/Leap_year
+//
+// Authors: tue11-brass & wed16-drum
+// Written: 24/09/2019
+
+#include &ltstdio.h&gt
+
+int main(){
+
+
+	int year;
+	printf("Please enter a year: ");
+	scanf("%d", &year );
+
+	if( year % 4 != 0 ){
+		printf("Not a leap year\n");
+	} else if(year % 100 != 0) {
+		printf("Is a leap year\n");
+	} else if(year % 400 != 0){
+		printf("Not a leap year\n");
+	} else {
+		printf("Is a leap year\n");
+	}
+
+	return 0;
+}
+</div></code></pre>
+</div>
+</div></div>
+</main>
+
+
+<footer class="text-muted"><div class="container">
+<p class="float-right"><a href="#">Back to top</a></p>
+</div></footer>
+
+</body>
+
+</html>
+
