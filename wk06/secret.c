@@ -1,5 +1,6 @@
 
-// what does this do?
+// - what does this do?
+// - what questions do you have?
 int secret_function(char *word) {
     int i = 0;
     int result = 0;
